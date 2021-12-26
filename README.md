@@ -1,0 +1,2 @@
+# NixOS
+Mijn NixOS configuratie
