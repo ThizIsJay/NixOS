@@ -10,9 +10,4 @@
      device = "nodev";
     };
   };
-
-  # NVidia Drivers voor GTX 1650Ti
-  services.xserver.videoDrivers = [ "nvidia" ];
-  hardware.opengl.driSupport32Bit = true;
-
 }

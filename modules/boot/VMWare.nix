@@ -16,7 +16,4 @@
       device = "nodev";
     };
   };
-
-  # VMWare tools
-  virtualisation.vmware.guest.enable = true;
 }
