@@ -5,3 +5,4 @@
     ./Lenovo.nix
     #./VMWare.nix
   ];
+}
