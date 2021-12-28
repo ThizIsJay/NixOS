@@ -4,3 +4,4 @@
     ./modules/default.nix
     ./sys/default.nix
   ];
+}

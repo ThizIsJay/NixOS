@@ -2,7 +2,7 @@
 {
   hardware.pulseaudio.enable = false;
   sercurity.rtkit.enable = true;
-  service.pipewire = {
+  services.pipewire = {
     enable = true;
     # Alsa Support
     alsa.enable = true;

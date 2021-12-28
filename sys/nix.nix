@@ -4,9 +4,5 @@
   nixpkgs.config.allowUnfree = true;
   nix = {
     autoOptimiseStore = true;
-    packages = pkgs.nixFlakes;
-    extraOptions = ''
-      expirimental-features = nix-command flakes
-      '';
   };
 }

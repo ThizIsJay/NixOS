@@ -1,22 +1,17 @@
 { config, pkgs, ... }:
 {
   # Grub Bootloader
-  boot = {
-    loader = {
-      efi.canTouchEfiVariables = true;
-      efiSysMountPoint = "/boot";
-      cleanTmpDir = true;
-      supportedFileSystems = [
-        "exfat"
-      ];
+  boot.loader = {
+    efi = {
+      canTouchEfiVariables = true;
+      SysMountPoint = "/boot"
     };
     grub = {
-      enable = true;
-      efiSupport = true;
-      device = "nodev";
-      useOSProber = true;
+     efiSupport = true; 
+     device = "nodev";
     };
   };
+
   # NVidia Drivers voor GTX 1650Ti
   services.xserver.videoDrivers = [ "nvidia" ];
   hardware.opengl.driSupport32Bit = true;
