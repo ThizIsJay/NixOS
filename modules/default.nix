@@ -11,5 +11,7 @@
     ./systemd/default.nix
     # Boot
     ./boot/default.nix
+    # X
+    ./x/default.nix
   ];
 }

@@ -1,6 +1,10 @@
 { config, pkgs, ... }:
 {
-  services.xserver = true;
-  displayManager.autoLogin.enable = true;
-  displayManager.autoLogin.user = "thisjay"
+  services.xserver = {
+    enable = true;
+    displayManager.autoLogin = {
+      enable = true;
+      user = "thisjay";
+    }; 
+  };
 }

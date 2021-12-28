@@ -1,7 +1,9 @@
 { config, pkgs, ... }:
 {
+  imports = [
 #  ./touchpad.nix Werkt niet
   ./keyboard.nix
   ./xserver.nix
-  ./Xsessions/default.nix
+  ./XSessions/default.nix
+  ];
 }
