@@ -1,7 +1,7 @@
 { config , pkgs, ... }:
 {
   hardware.pulseaudio.enable = false;
-  sercurity.rtkit.enable = true;
+  security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
     # Alsa Support
@@ -9,7 +9,6 @@
     alsa.support32Bit = true;
     # PulseAudio
     pulse.enable = true;
-    pulse.support32Bit = true;
     # Jack
     jack.enable = true;
   };

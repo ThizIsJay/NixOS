@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 {
-  imports [
+  imports = [
     # Localisatie en Tijd
     ./timedate.nix
     ./console.nix
